@@ -16,13 +16,15 @@ class Edit extends Component
         updateHb={this.state.hb}
         this.setState({ hb: updateHb });
 
+        handleChange(e) {
+            const {name, value} = e.target
+            this.setState({ [name]: value});
+
   render(){
       return(
           <div> 
               <button id="Edit"
-              onclick={() => 
-
-                axios.put("/api/hbs/" + props.hb.description).then(response => {
+              onclick={() => axios.put("/api/hbs/", hbController.getHb).then(response => {
                 props.updateHbs(response.data);  
                  
             });

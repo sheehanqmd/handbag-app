@@ -14,6 +14,7 @@ class App extends Component {
     this.state = {
       hb: []
       };
+
       this.passNewHb = this.passNewHb.bind(this);
 
   }

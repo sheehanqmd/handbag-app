@@ -12,6 +12,7 @@ class Hbs extends Component {
             loading: true,
             error: ""
         };
+
         this.updateHbs = this.updateHbs.bind(this);
     }
     componentDidMount() {
@@ -37,14 +38,11 @@ class Hbs extends Component {
         return(
             <div>
             <section className="hbs">
-                
-            
-                {hbs.map((hb, index) => {
+                 {hbs.map((hb, index) => {
                    return(
                     <Hb key={index} index={index} hb={hb} updateHbs={this.updateHbs}/>
                    )}
-                   
-                )}
+             )}
                 
             </section>
             <Add updateHbs = {this.updateHbs}/>
