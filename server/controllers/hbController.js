@@ -23,6 +23,16 @@ const getHb = (req, res) => {
     res.json(hb);
 };
 
+// const getHb = (req, res) => {
+//   const index = hb.findIndex(hbs => hbs.image === request.params.image);
+//   res.json(hb);
+// }
+
+// const getHb = (req, res) => {
+//   const index = hb.findIndex(hbs => hbs.price === request.params.price);
+//   res.json(hb);
+// }
+
 const postHb = (req, res) => {
    hb.push(req.body);
    res.json(hb);
@@ -36,7 +46,7 @@ const deleteHb = (req, res) => {
 
 const putHb = (req, res) => {
   hbs.update(req.body);
-  res.json(Hbs)
+  res.json(Hbs);
 };
 
 

@@ -9,8 +9,10 @@ class Edit extends Component
         loading: true,
         error: ""
     };
+
       this.handleChange = this.handleChange.bind(this);
   }
+
         updateHb={this.state.hb}
         this.setState({ hb: updateHb });
 
@@ -19,6 +21,7 @@ class Edit extends Component
           <div> 
               <button id="Edit"
               onclick={() => 
+
                 axios.put("/api/hbs/" + props.hb.description).then(response => {
                 props.updateHbs(response.data);  
                  
