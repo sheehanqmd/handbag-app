@@ -6,7 +6,7 @@ const hb = [
     contact: "(214)555-5555"
   },
   {
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTSIZDkWQiQEB3S_Uq1SQy2NUlXS7YSG7TLwrufVw7XkUndzVP",
+      image: "https://images.neimanmarcus.com/ca/5/product_assets/V/3/Z/G/S/NMV3ZGS_mz.jpg",
       price: "$300",
       description:"Ferragamo",
       contact: "(214)555-5555"

@@ -26,7 +26,7 @@ class Add extends Component {
       .then(response => {
         console.log(response.data);
         this.props.updateHbs(response.data)
-        this.props.passNewHbState(response.data);
+        this.props.passNewHb(response.data);
       })
       .catch(error => {
         

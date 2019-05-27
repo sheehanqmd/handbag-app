@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import './App.css';
 import Hbs from "./components/Hbs";
 import Header from './components/Header';
+// import Edit from "./components/Edit";
 
 
 
@@ -13,10 +14,10 @@ class App extends Component {
     this.state = {
       hb: []
       };
-      this.passNewHbState = this.passNewHbState.bind(this);
+      this.passNewHb = this.passNewHb.bind(this);
 
   }
-  passNewHbState(e) {
+  passNewHb(e) {
     this.setState({hb: e})
     console.log(e);
   }
@@ -27,6 +28,7 @@ render() {
     <div>
       <Header/>
       <Hbs hb={this.state.hb}/>
+      {/* <Edit hb={this.state.hb}/> */}
     </div>
   );
  };
